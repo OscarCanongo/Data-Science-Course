@@ -27,14 +27,18 @@ SELECT lastName, firstName, country FROM employees INNER JOIN offices ON employe
 WHERE country = 'USA';
 
 -- 10) Obten el número de cliente, número de cheque y cantidad del cliente que ha realizado el pago más alto.
-SELECT lastName, firstName, country FROM employees INNER JOIN offices ON employees.officeCode = offices.officeCode
-WHERE country = 'USA';
+SELECT customerNumber, checkNumber, amount FROM payments ORDER BY amount DESC LIMIT 1;
 
--- 11) Obten el número de cliente, número de cheque y cantidad de aquellos clientes cuyo pago es más alto que el promedio.
+-- 11)No s Obten el número de cliente, número de cheque y cantidad de aquellos clientes cuyo pago es más alto que el promedio.
+SELECT customerNumber, checkNumber, amount from payments WHERE amount > (SELECT AVG(amount) FROM payments ORDER BY amount) 
+ORDER BY amount;
 
 -- 12) Obten el nombre de aquellos clientes que no han hecho ninguna orden.
+SELECT customerName from customers LEFT JOIN orders ON customers.customerNumber = orders.customerNumber 
+WHERE orders.customerNumber IS NULL;
 
 -- 13) Obten el máximo, mínimo y promedio del número de productos en las órdenes de venta.
+SELECT MAX(quantityOrdered), MIN(quantityOrdered), AVG(quantityOrdered) FROM orderdetails GROUP BY productCode;
 
 -- 14) Dentro de la tabla orders, obten el número de órdenes que hay por cada estado.
-
+SELECT COUNT(*), status FROM orders GROUP BY status;
