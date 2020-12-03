@@ -1,0 +1,88 @@
+-- Para estas consultas usa INNER JOIN
+
+-- 1) Obtén la cantidad de productos de cada orden.
+SELECT SUM(quantityOrdered), orders.orderNumber FROM orderdetails INNER JOIN orders 
+ON orderdetails.orderNumber = orders.orderNumber GROUP BY orders.orderNumber;
+
+-- 2) Obten el número de orden, estado y costo total de cada orden.
+SELECT orders.orderNumber, status, SUM(amount) FROM orders INNER JOIN customers ON orders.customerNumber = customers.customerNumber
+INNER JOIN payments ON customers.customerNumber = payments.customerNumber GROUP BY orders.orderNumber;
+
+-- 3) Obten el número de orden, fecha de orden, línea de orden, nombre del producto, cantidad ordenada y precio de cada pieza.
+SELECT orders.orderNumber, orderDate, orderLineNumber, productName, quantityOrdered, priceEach FROM products 
+INNER JOIN orderdetails ON products.productCode = orderdetails.productCode INNER JOIN orders 
+ON orderdetails.orderNumber = orders.orderNumber;
+
+-- 4) Obtén el número de orden, nombre del producto, el precio sugerido de fábrica (msrp) y precio de cada pieza.
+SELECT orderNumber, productName, MSRP, priceEach FROM products INNER JOIN orderdetails 
+ON products.productCode = orderdetails.productCode; 
+
+--Para estas consultas usa LEFT JOIN
+
+-- 5) Obtén el número de cliente, nombre de cliente, número de orden y estado de cada orden hecha por cada cliente. ¿De qué nos sirve hacer LEFT JOIN en lugar de JOIN?
+SELECT customers.customerNumber, customerName, orderNumber, status FROM customers LEFT JOIN orders 
+ON customers.customerNumber = orders.customerNumber;
+
+--Respuesta: Nos sirve para traernos los empleados que aún no han hecho ordenes.
+
+-- 6) Obtén los clientes que no tienen una orden asociada.
+SELECT customers.customerNumber, customerName, orders.customerNumber FROM customers LEFT JOIN orders 
+ON customers.customerNumber = orders.customerNumber WHERE orders.customerNumber IS NULL;
+
+-- 7) Obtén el apellido de empleado, nombre de empleado, nombre de cliente, número de cheque y total, es decir, los clientes asociados a cada empleado.
+SELECT lastName, firstName, customerName, checkNumber, amount FROM employees LEFT JOIN customers 
+ON employeeNumber = salesRepEmployeeNumber LEFT JOIN payments ON customers.customerNumber = payments.customerNumber;
+
+-- Para estas consultas usa RIGHT JOIN
+
+-- 8) Repite los ejercicios 5 a 7 usando RIGHT JOIN. ¿Representan lo mismo? Explica las diferencias en un comentario. Para poner comentarios usa --.
+
+-- 5) Obtén el número de cliente, nombre de cliente, número de orden y estado de cada orden hecha por cada cliente. ¿De qué nos sirve hacer LEFT JOIN en lugar de JOIN?
+SELECT customers.customerNumber, customerName, orderNumber, status FROM customers RIGHT JOIN orders 
+ON customers.customerNumber = orders.customerNumber;
+
+-- 6) Obtén los clientes que no tienen una orden asociada.
+SELECT customers.customerNumber, customerName, orders.customerNumber FROM customers RIGHT JOIN orders 
+ON customers.customerNumber = orders.customerNumber WHERE orders.customerNumber IS NULL;
+
+-- 7) Obtén el apellido de empleado, nombre de empleado, nombre de cliente, número de cheque y total, es decir, los clientes asociados a cada empleado.
+SELECT lastName, firstName, customerName, checkNumber, amount FROM employees RIGHT JOIN customers 
+ON employeeNumber = salesRepEmployeeNumber RIGHT JOIN payments ON customers.customerNumber = payments.customerNumber;
+
+--Respuesta. NO representan lo mismo porque ahora me está tomando los payments que sean NULL y ya no los employees.
+
+-- 9) Escoge 3 consultas de los ejercicios anteriores, crea una vista y escribe una consulta para cada una.
+
+--Consulta 1)
+CREATE VIEW Oscar4_616 AS (
+SELECT orders.orderNumber, orderDate, orderLineNumber, productName, quantityOrdered, priceEach AS 'ventas'
+FROM products 
+INNER JOIN orderdetails ON products.productCode = orderdetails.productCode
+INNER JOIN orders 
+ON orderdetails.orderNumber = orders.orderNumber
+);
+
+SELECT *
+FROM Oscar4_616;
+
+--Consulta 2)
+CREATE VIEW Oscar5_616 AS (
+SELECT lastName, firstName, customerName, checkNumber, amount AS 'ventas'
+FROM employees 
+LEFT JOIN customers ON employeeNumber = salesRepEmployeeNumber
+LEFT JOIN payments ON customers.customerNumber = payments.customerNumber
+); 
+
+SELECT *
+FROM Oscar5_616;
+
+--Consulta 3)
+CREATE VIEW Oscar6_616 AS (
+SELECT lastName, firstName, customerName, checkNumber, amount AS 'ventas'
+FROM employees 
+RIGHT JOIN customers ON employeeNumber = salesRepEmployeeNumber
+RIGHT JOIN payments ON customers.customerNumber = payments.customerNumber
+); 
+
+SELECT *
+FROM Oscar6_616;
