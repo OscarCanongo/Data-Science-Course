@@ -22,3 +22,4 @@ INNER JOIN empleado ON puesto.id_puesto = empleado.id_puesto
 INNER JOIN venta ON empleado.id_empleado = venta.id_empleado
 GROUP BY puesto.id_puesto
 ); 
+
