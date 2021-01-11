@@ -10,3 +10,15 @@ fthg
 
 ftag = laLiga$FTAG
 ftag
+
+#Consulta cómo funciona la función table en R al ejecutar en la consola ?table
+?table
+
+dim(laLiga)
+
+#La probabilidad (marginal) de que el equipo que juega en casa anote x goles
+(table(fthg)/dim(laLiga)[1])*100
+
+#La probabilidad (marginal) de que el equipo que juega como visitante anote y goles (y = 0, 1, 2, ...)
+(table(ftag)/dim(laLiga)[1])*100
+
