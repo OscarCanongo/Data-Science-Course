@@ -22,3 +22,7 @@ dim(laLiga)
 #La probabilidad (marginal) de que el equipo que juega como visitante anote y goles (y = 0, 1, 2, ...)
 (table(ftag)/dim(laLiga)[1])*100
 
+#La probabilidad (conjunta) de que el equipo que juega en casa anote x goles y el equipo que juega como visitante anote y goles (x = 0, 1, 2, ..., y = 0, 1, 2, ...)
+(table(ftag, fthg)/dim(laLiga)[1])*100
+
+
