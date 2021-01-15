@@ -24,3 +24,20 @@ View(laLiga2017)
 summary(laLiga2019)
 summary(laLiga2018)
 summary(laLiga2017)
+
+#Con la función select del paquete dplyr selecciona únicamente las columnas Date, HomeTeam, AwayTeam, FTHG, FTAG y FTR; esto para cada uno de los data frames. (Hint: también puedes usar lapply).
+
+#instalar dplyr
+install.packages('dplyr')
+
+#Cargar la libreria
+library(dplyr)
+
+#Nombre del dataframe va primero. 
+LaLiga2019 <-select(laLiga2019, Date, HomeTeam, AwayTeam, FTHG, FTAG, FTR) # Date, HomeTeam, AwayTeam, FTHG, FTAG y FTR
+LaLiga2018 <-select(laLiga2018, Date, HomeTeam, AwayTeam, FTHG, FTAG, FTR)
+LaLiga2017 <-select(laLiga2017, Date, HomeTeam, AwayTeam, FTHG, FTAG, FTR)
+
+LaLiga2019
+LaLiga2018
+LaLiga2017
