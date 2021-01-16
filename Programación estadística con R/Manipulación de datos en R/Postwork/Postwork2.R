@@ -41,3 +41,18 @@ LaLiga2017 <-select(laLiga2017, Date, HomeTeam, AwayTeam, FTHG, FTAG, FTR)
 LaLiga2019
 LaLiga2018
 LaLiga2017
+
+#Asegúrate de que los elementos de las columnas correspondientes de los nuevos data frames sean del mismo tipo (Hint 1: usa as.Date y mutate para arreglar las fechas). Con ayuda de la función rbind forma un único data frame que contenga las seis columnas mencionadas en el punto 3 (Hint 2: la función do.call podría ser utilizada).
+
+#Arreglamos la fecha 
+LaLiga2019Date <- mutate(LaLiga2019, Date = as.Date(Date, "%d/%m/%Y"))
+LaLiga2018Date <- mutate(LaLiga2018, Date = as.Date(Date, "%d/%m/%Y"))
+LaLiga2017Date <- mutate(LaLiga2017, Date = as.Date(Date, "%d/%m/%y"))
+
+#Ponemos todos los data frames en una lista
+LaLiga <- list(LaLiga2019Date, LaLiga2018Date, LaLiga2017Date)
+LaLiga
+
+#Combinar los dataframes en uno solo
+LaLigaFinal <- do.call(rbind, LaLiga)
+LaLigaFinal
