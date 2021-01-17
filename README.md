@@ -1,9 +1,7 @@
-# Data-Science-Course
+BEDU - Disruptive Innovation: Data Science
 Evidencias del curso de ciencia de datos de BEDU
 
 ## Módulo: Introducción a Bases de Datos
-
-<img src="imagenes/bedu.jpg" align="right" height="150" width="150">
 
 <img src="https://cdn.dribbble.com/users/776867/screenshots/6179644/mongogooo.gif" align="right" height="150" width="150" hspace="10">
 <div style="text-align: justify;">
