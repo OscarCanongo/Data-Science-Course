@@ -11,7 +11,7 @@ Evidencias del curso de ciencia de datos de BEDU
 El módulo de __Introducción a Bases de Datos__ forma parte del programa *Data Analysis* en __BEDU__ y tiene como 
 principal objetivo conocer los principales conceptos que ahondan las bases de datos y ponerlos en práctica mediante la generación de consultas a través sistemas gestores de bases de datos relacionales y no relacionales.						
 
-### Contenido
+### Evidencias
  
  - [Sesión 1: Fundamentos de SQL](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Introducci%C3%B3n%20a%20base%20de%20datos/FundamentosDeSQL/EjerciciosSesion1.sql) 
  - [Sesión 2: Agrupaciones y subconsultas](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Introducci%C3%B3n%20a%20base%20de%20datos/AgrupacionesySubconsultas/EjerciciosSesion2.sql) 
@@ -33,7 +33,7 @@ principal objetivo conocer los principales conceptos que ahondan las bases de da
 El módulo de __Estadística y Programación con R__ forma parte del programa *Data Analysis* en __BEDU__ y tiene como 
 principal objetivo realizar tareas de limpieza, manipulación y análisis de bases de datos utilizando el lenguaje de programación R, para después poder crear visualizaciones, predicciones y modelaje matemático, que permitirán transformar datos en información para mejorar la toma decisiones en las organizaciones.					
 
-### Contenido
+### Evidencias
 
  - [Sesión 1: Introducción a R y Software ](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/Introducci%C3%B3n%20a%20R%20y%20Software/Postwork1.R) 
  - [Sesión 2: Programación y manipulación de datos en R ](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/Manipulaci%C3%B3n%20de%20datos%20en%20R/Postwork/Postwork2.R) 
