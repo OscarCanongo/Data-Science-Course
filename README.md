@@ -19,6 +19,6 @@ principal objetivo conocer los principales conceptos que ahondan las bases de da
  - [Sesión 4: Configuración de Bases de Datos Locales](Sesion-04/Introducción a base de datos/ConfiguraciondeBasesdeDatosLocales/Ejercicios) 
  - [Sesión 5: Fundamentos de MongoDB](Sesion-05/Introducción a base de datos/FundamentosdeMongoDB/ejercicios)
  - [Sesión 6: Consultas en MongoDB](Sesion-06/Introducción a base de datos/ConsultasenMongoDB/ejercicios) 
- - [Sesión 7: Agregaciones](Sesion-07/Introducción a base de datos/Agregaciones/Ejercicio) 
+ - [Sesión 7: Agregaciones](https://github.com/OscarCanongo/Data-Science-Course/tree/master/Introducci%C3%B3n%20a%20base%20de%20datos/Agregaciones/Ejercicio) 
  
 </div>
