@@ -13,12 +13,12 @@ principal objetivo conocer los principales conceptos que ahondan las bases de da
 
 ### Contenido
  
- - [Sesión 1: Fundamentos de SQL](Introducción a base de datos/FundamentosDeSQL/EjerciciosSesion1.sql) 
- - [Sesión 2: Agrupaciones y subconsultas](Sesion-02/Introducción a base de datos/AgrupacionesySubconsultas/EjerciciosSesion2.sql) 
- - [Sesión 3: Joins y Vistas](Sesion-03/Introducción a base de datos/JoinsYVistas/ejercicios.sql) 
- - [Sesión 4: Configuración de Bases de Datos Locales](Sesion-04/Introducción a base de datos/ConfiguraciondeBasesdeDatosLocales/Ejercicios) 
- - [Sesión 5: Fundamentos de MongoDB](Sesion-05/Introducción a base de datos/FundamentosdeMongoDB/ejercicios)
- - [Sesión 6: Consultas en MongoDB](Sesion-06/Introducción a base de datos/ConsultasenMongoDB/ejercicios) 
+ - [Sesión 1: Fundamentos de SQL](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Introducci%C3%B3n%20a%20base%20de%20datos/FundamentosDeSQL/EjerciciosSesion1.sql) 
+ - [Sesión 2: Agrupaciones y subconsultas](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Introducci%C3%B3n%20a%20base%20de%20datos/AgrupacionesySubconsultas/EjerciciosSesion2.sql) 
+ - [Sesión 3: Joins y Vistas](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Introducci%C3%B3n%20a%20base%20de%20datos/JoinsYVistas/ejercicios.sql%20) 
+ - [Sesión 4: Configuración de Bases de Datos Locales](https://github.com/OscarCanongo/Data-Science-Course/tree/master/Introducci%C3%B3n%20a%20base%20de%20datos/ConfiguraciondeBasesdeDatosLocales/Ejercicios) 
+ - [Sesión 5: Fundamentos de MongoDB](https://github.com/OscarCanongo/Data-Science-Course/tree/master/Introducci%C3%B3n%20a%20base%20de%20datos/FundamentosdeMongoDB/ejercicios)
+ - [Sesión 6: Consultas en MongoDB](https://github.com/OscarCanongo/Data-Science-Course/tree/master/Introducci%C3%B3n%20a%20base%20de%20datos/ConsultasenMongoDB/ejercicios) 
  - [Sesión 7: Agregaciones](https://github.com/OscarCanongo/Data-Science-Course/tree/master/Introducci%C3%B3n%20a%20base%20de%20datos/Agregaciones/Ejercicio) 
  
 </div>
