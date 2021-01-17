@@ -30,7 +30,7 @@ principal objetivo conocer los principales conceptos que ahondan las bases de da
 
 ### Descripción
 
-El módulo de __Introducción a Bases de Datos__ forma parte del programa *Data Analysis* en __BEDU__ y tiene como 
+El módulo de __Estadística y Programación con R__ forma parte del programa *Data Analysis* en __BEDU__ y tiene como 
 principal objetivo realizar tareas de limpieza, manipulación y análisis de bases de datos utilizando el lenguaje de programación R, para después poder crear visualizaciones, predicciones y modelaje matemático, que permitirán transformar datos en información para mejorar la toma decisiones en las organizaciones.					
 
 ### Contenido
