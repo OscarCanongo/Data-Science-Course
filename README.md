@@ -31,6 +31,15 @@ principal objetivo conocer los principales conceptos que ahondan las bases de da
 ### Descripción
 
 El módulo de __Introducción a Bases de Datos__ forma parte del programa *Data Analysis* en __BEDU__ y tiene como 
-principal objetivo conocer los principales conceptos que ahondan las bases de datos y ponerlos en práctica mediante la generación de consultas a través sistemas gestores de bases de datos relacionales y no relacionales.						
+principal objetivo realizar tareas de limpieza, manipulación y análisis de bases de datos utilizando el lenguaje de programación R, para después poder crear visualizaciones, predicciones y modelaje matemático, que permitirán transformar datos en información para mejorar la toma decisiones en las organizaciones.					
 
 ### Contenido
+
+ - [Sesión 1: Introducción a R y Software ](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/Introducci%C3%B3n%20a%20R%20y%20Software/Postwork1.R) 
+ - [Sesión 2: Programación y manipulación de datos en R ](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/Manipulaci%C3%B3n%20de%20datos%20en%20R/Postwork/Postwork2.R) 
+ - [Sesión 3: Análisis Exploratorio de Datos (AED o EDA) con R](#)
+ - [Sesión 4: Algunas distribuciones, teorema central del límite y contraste de hipótesis](#) 
+ - [Sesión 5: Regresión lineal y clasificación](#) 
+ - [Sesión 6: Series de tiempo](#)
+ - [Sesión 7: RStudio Cloud - Github, conexiones con BDs y lectura de datos externos](#) 
+ - [Sesión 8: Dashboards con Shiny - Entorno GUI](#)
