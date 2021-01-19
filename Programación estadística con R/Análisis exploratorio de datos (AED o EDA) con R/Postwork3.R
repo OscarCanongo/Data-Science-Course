@@ -26,13 +26,40 @@ LaLigaFinal <- do.call(rbind, LaLiga)
 LaLigaFinal
 
 #La probabilidad (marginal) de que el equipo que juega en casa anote x goles (x=0,1,2,)
-fthg = LaLigaFinal$FTHG
-(table(fthg)/dim(LaLigaFinal)[1])*100
+fthg <- LaLigaFinal$FTHG
+FTHG <- (table(fthg)/dim(LaLigaFinal)[1])*100
+GolesCasa <- data.frame(FTHG)
+colnames(GolesCasa)[1] <- "Goles"
+colnames(GolesCasa)[2] <- "Probabilidad"
+GolesCasa
 
 #La probabilidad (marginal) de que el equipo que juega como visitante anote y goles (y=0,1,2,)
-ftag = LaLigaFinal$FTAG
-(table(ftag)/dim(LaLigaFinal)[1])*100
+ftag <- LaLigaFinal$FTAG
+FTAG <- (table(ftag)/dim(LaLigaFinal)[1])*100
+GolesVisita <- data.frame(FTAG)
+colnames(GolesVisita)[1] <- "Goles"
+colnames(GolesVisita)[2] <- "Probabilidad"
+GolesVisita
 
 #La probabilidad (conjunta) de que el equipo que juega en casa anote x goles y el equipo que juega como visitante anote y goles (x=0,1,2,, y=0,1,2,)
-(table(ftag, fthg)/dim(LaLigaFinal)[1])*100
+Goles <- (table(ftag, fthg)/dim(LaLigaFinal)[1])*100
+GolesTotales <- data.frame(Goles)
+colnames(GolesTotales)[1] <- "Local"
+colnames(GolesTotales)[2] <- "Visita"
+colnames(GolesTotales)[3] <- "Probabilidad"
+GolesTotales
+library(ggplot2)
+
+#Un gr�fico de barras para las probabilidades marginales estimadas del n�mero de goles que anota el equipo de casa
+ggplot(GolesCasa, aes(x=Goles, y=Probabilidad)) + 
+  geom_bar(stat = "identity", fill = "#3498DB") +
+  ggtitle("Probabilidad de gol equipo de casa")
+
+#Un gr�fico de barras para las probabilidades marginales estimadas del n�mero de goles que anota el equipo visitante.
+ggplot(GolesVisita, aes(x=Goles, y=Probabilidad)) + 
+  geom_bar(stat = "identity", fill = "#3498DB") +
+  ggtitle("Probabilidad de gol equipo de visita")
+
+#Un HeatMap para las probabilidades conjuntas estimadas de los n�meros de goles que anotan el equipo de casa y el equipo visitante en un partido.
+ggplot(GolesTotales, aes(x = Local, y = Visita, fill = Probabilidad)) + geom_tile() + ggtitle("Probabilidad de Resultado")
 
