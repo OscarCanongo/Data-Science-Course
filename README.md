@@ -38,7 +38,7 @@ principal objetivo realizar tareas de limpieza, manipulación y análisis de bas
  - [Sesión 1: Introducción a R y Software ](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/Introducci%C3%B3n%20a%20R%20y%20Software/Postwork1.R) 
  - [Sesión 2: Programación y manipulación de datos en R ](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/Manipulaci%C3%B3n%20de%20datos%20en%20R/Postwork/Postwork2.R) 
  - [Sesión 3: Análisis Exploratorio de Datos (AED o EDA) con R](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/An%C3%A1lisis%20exploratorio%20de%20datos%20(AED%20o%20EDA)%20con%20R/Postwork3.R)
- - [Sesión 4: Algunas distribuciones, teorema central del límite y contraste de hipótesis](#) 
+ - [Sesión 4: Algunas distribuciones, teorema central del límite y contraste de hipótesis](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/%20Algunas%20distribuciones%2C%20teorema%20central%20del%20l%C3%ADmite%20y%20contraste%20de%20hip%C3%B3tesis/Postwork4.R) 
  - [Sesión 5: Regresión lineal y clasificación](#) 
  - [Sesión 6: Series de tiempo](#)
  - [Sesión 7: RStudio Cloud - Github, conexiones con BDs y lectura de datos externos](#) 
