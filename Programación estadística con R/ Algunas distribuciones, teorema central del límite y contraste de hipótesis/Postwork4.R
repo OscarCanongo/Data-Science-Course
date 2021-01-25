@@ -67,3 +67,14 @@ ggplot(GolesTotales, aes(x = Local, y = Visita, fill = Probabilidad)) + geom_til
 #Ya hemos estimado las probabilidades conjuntas de que el equipo de casa anote X=x goles (x=0,1,... ,8), y el equipo visitante anote Y=y goles (y=0,1,... ,6), en un partido. Obtén una tabla de cocientes al dividir estas probabilidades conjuntas por el producto de las probabilidades marginales correspondientes.
 tablaCocientes <- (Goles/outer(FTAG,FTHG,'*'))
 tablaCocientes
+
+install.packages("rsample")
+library(rsample)
+set.seed(4566264)
+booty=bootstraps(tablaCocientes,times=100)
+booty1=booty$splits[[100]]
+booty2=as.data.frame(booty1)
+booty2
+booty1
+plot(booty2)
+
