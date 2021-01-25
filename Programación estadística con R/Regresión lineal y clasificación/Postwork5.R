@@ -32,4 +32,5 @@ write.csv(x = SmallData, file = "soccer.csv", row.names = FALSE)
 install.packages("fbRanks")
 library(fbRanks)
 listasoccer <- create.fbRanks.dataframes(scores.file = "~/Desktop/Data-Science-Course/Programación estadística con R/Regresión lineal y clasificación/Data/soccer.csv")
-
+anotaciones <- listasoccer$scores
+equipos <- listasoccer$teams
