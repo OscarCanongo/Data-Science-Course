@@ -32,4 +32,13 @@ write.csv(x = SmallData, file = "soccer.csv", row.names = FALSE)
 install.packages("fbRanks")
 library(fbRanks)
 listasoccer <- create.fbRanks.dataframes(scores.file = "~/Desktop/Data-Science-Course/Programación estadística con R/Regresión lineal y clasificación/Data/soccer.csv")
+anotaciones <- listasoccer$scores
+equipos <- listasoccer$teams
+
+#Con ayuda de la función unique crea un vector de fechas (fecha) que no se repitan y que correspondan a las fechas en las que se jugaron partidos. Crea una variable llamada n que contenga el número de fechas diferentes. Posteriormente, con la función rank.teams y usando como argumentos los data frames anotaciones y equipos, crea un ranking de equipos usando unicamente datos desde la fecha inicial y hasta la penúltima fecha en la que se jugaron partidos, estas fechas las deberá especificar en max.date y min.date. Guarda los resultados con el nombre ranking.
+fecha <- unique(anotaciones$date)
+n <- length(fecha)
+ranking <- rank.teams(scores = anotaciones, teams = equipos,
+                      max.date = fecha[n-1],
+                      min.date = fecha[1])
 
