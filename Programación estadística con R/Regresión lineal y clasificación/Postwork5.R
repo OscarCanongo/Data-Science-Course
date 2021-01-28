@@ -42,3 +42,8 @@ ranking <- rank.teams(scores = anotaciones, teams = equipos,
                       max.date = fecha[n-1],
                       min.date = fecha[1])
 
+#Finalmente estima las probabilidades de los eventos, el equipo de casa gana, el equipo visitante gana o el resultado es un empate para los partidos que se jugaron en la última fecha del vector de fechas fecha. Esto lo puedes hacer con ayuda de la función predict y usando como argumentos ranking y fecha[n] que deberá especificar en date.
+predicciones <- predict(ranking, date = fecha[n])
+
+prediccionesFinal <- predicciones$scores
+
