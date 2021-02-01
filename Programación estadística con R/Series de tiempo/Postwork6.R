@@ -4,3 +4,7 @@ matches <- read.csv("~/Desktop/Data-Science-Course/Programación estadística co
 #Agrega una nueva columna sumagoles que contenga la suma de goles por partido.
 library(dplyr)
 matches <- mutate(matches, sumagoles = home.score + away.score)
+
+#Obtén el promedio por mes de la suma de goles.
+promedio <- mean(matches$sumagoles)
+promedio
