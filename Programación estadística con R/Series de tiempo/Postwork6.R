@@ -6,5 +6,12 @@ library(dplyr)
 matches <- mutate(matches, sumagoles = home.score + away.score)
 
 #Obtén el promedio por mes de la suma de goles.
-promedio <- mean(matches$sumagoles)
-promedio
+
+Matches <- matches %>% 
+  mutate(date = as.Date(date, "%Y-%m-%d")) %>%
+  mutate(Mes = format(date, "%Y-%m"))
+
+golesMes <- Matches %>% 
+  group_by(Mes) %>%                  # date
+  summarise(totales = mean(sumagoles)       # promediamos los goles totales
+  )
