@@ -15,3 +15,6 @@ golesMes <- Matches %>%
   group_by(Mes) %>%                  # date
   summarise(totales = mean(sumagoles)       # promediamos los goles totales
   )
+
+#Crea la serie de tiempo del promedio por mes de la suma de goles hasta diciembre de 2019.
+serie <- ts(golesMes$totales, start = 1, frequency = 10)
