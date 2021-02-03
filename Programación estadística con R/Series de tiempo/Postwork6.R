@@ -19,4 +19,5 @@ golesMes <- Matches %>%
 #Crea la serie de tiempo del promedio por mes de la suma de goles hasta diciembre de 2019.
 serie <- ts(golesMes$totales, start = 1, frequency = 10)
 
+#Grafica la serie de tiempo.
 ts.plot(serie)
