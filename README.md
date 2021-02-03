@@ -41,5 +41,5 @@ principal objetivo realizar tareas de limpieza, manipulación y análisis de bas
  - [Sesión 4: Algunas distribuciones, teorema central del límite y contraste de hipótesis](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/%20Algunas%20distribuciones%2C%20teorema%20central%20del%20l%C3%ADmite%20y%20contraste%20de%20hip%C3%B3tesis/Postwork4.R) 
  - [Sesión 5: Regresión lineal y clasificación](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/Regresi%C3%B3n%20lineal%20y%20clasificaci%C3%B3n/Postwork5.R) 
  - [Sesión 6: Series de tiempo](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/Series%20de%20tiempo/Postwork6.R)
- - [Sesión 7: RStudio Cloud - Github, conexiones con BDs y lectura de datos externos](#) 
+ - [Sesión 7: RStudio Cloud - Github, conexiones con BDs y lectura de datos externos](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/RStudio%20Cloud%20-%20Github%2C%20conexiones%20con%20BDs%20y%20lectura%20de%20datos%20externos/Postwork7.R) 
  - [Sesión 8: Dashboards con Shiny - Entorno GUI](#)
