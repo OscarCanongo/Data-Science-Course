@@ -43,3 +43,20 @@ principal objetivo realizar tareas de limpieza, manipulación y análisis de bas
  - [Sesión 6: Series de tiempo](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/Series%20de%20tiempo/Postwork6.R)
  - [Sesión 7: RStudio Cloud - Github, conexiones con BDs y lectura de datos externos](https://github.com/OscarCanongo/Data-Science-Course/blob/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/RStudio%20Cloud%20-%20Github%2C%20conexiones%20con%20BDs%20y%20lectura%20de%20datos%20externos/Postwork7.R) 
  - [Sesión 8: Dashboards con Shiny - Entorno GUI](https://github.com/OscarCanongo/Data-Science-Course/tree/master/Programaci%C3%B3n%20estad%C3%ADstica%20con%20R/Dashboards%20con%20Shiny%20-%20Entorno%20GUI)
+
+## Módulo: Procesamiento de Datos con Python
+
+<img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" align="right" height="150" width="150" hspace="10">
+<div style="text-align: justify;">
+
+	
+### Evidencias
+
+ - [Sesión 1: Fundamentos de Python](#) 
+ - [Sesión 2: Estructuras de datos y funciones](#) 
+ - [Sesión 3: Programación funcional, operadores lógicos y funciones lambda](#)
+ - [Sesión 4: Pandas y Análisis Exploratorio de Datos](#) 
+ - [Sesión 5: Funciones Vectorizadas y Limpieza de Datos](#) 
+ - [Sesión 6: APIs, automatización y concatenación de DataFrames](#)
+ - [Sesión 7: Transformación, filtración y ordenamiento de datos](#) 
+ - [Sesión 8: Bases de datos, merge y agrupaciones](#)
